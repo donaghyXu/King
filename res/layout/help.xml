@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    android:orientation="vertical"  
+    android:gravity="center" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="游戏说明"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"/>
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本游戏分为3个模块:分别是闯关模式,计时模式与无尽模式\n一.闯关模式:分为简单,中等,难三关,地鼠停留时间减短,必须达到40分方可进入下关\n二.计时模式:在规定的30s时间内达到40分过关\n三.无尽模式:此关没有任何限制,供玩家尽情发泄"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"/>
+    
+	<Button
+	    android:id="@+id/btnHelpBack"
+	    android:layout_width="wrap_content"
+        android:layout_height="24sp"
+        android:background="@drawable/btn_exit"
+        android:text="返回"/>
+</LinearLayout>

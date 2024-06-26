@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainRLayout"
+    android:background="#000000"
+    >
+    <com.whacamole.king.MyScrollLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"    
+	  android:id="@+id/ScrollLayout"    
+	  android:layout_width="fill_parent"    
+	  android:layout_height="fill_parent"
+	  android:visibility="visible"
+	  >
+      <RelativeLayout  android:background="@drawable/king"    
+	  android:layout_width="fill_parent"    
+	  android:layout_height="fill_parent"
+	  >
+          <TextView
+              android:id="@+id/tv_1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginBottom="89dp"
+              android:text="King"
+              android:textColor="#FFFFFF"
+              android:textSize="80sp" />
+          <Button
+        	android:id="@+id/button_1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+         	android:background="#99cc66"
+          />
+           <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+    	android:layout_below="@+id/button_1"
+    	android:padding="40sp"
+    	android:layout_centerInParent="true"
+        android:text="Never to return,we are the best!" />
+
+      </RelativeLayout>
+      
+      <RelativeLayout  android:background="@drawable/cat_mouse"    
+	  	android:layout_width="fill_parent"    
+	  	android:layout_height="fill_parent">
+          <TextView
+              android:id="@+id/t1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="50dp"
+              android:text="队长：徐栋 \n队员：周洁\n\t\t\t邹莹莹\n\t\t\t陈婷 \n\t\t\t林锦容 \n\t\t\t阮桂华\n\t\t\t杨长新"
+              android:textColor="#FFFFFF"
+              android:textSize="20sp" />
+              
+                
+      </RelativeLayout>
+      
+    
+      <RelativeLayout  
+          	android:background="@drawable/startaction"    
+	  		android:layout_width="fill_parent"    
+	  		android:layout_height="fill_parent">
+          <Button
+              android:id="@+id/startBtn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"              
+               android:rotation="15"
+              android:text="Action"
+              android:textSize="45sp"              
+              android:background="@drawable/button_bg"            
+			  
+              />
+      </RelativeLayout>
+    </com.whacamole.king.MyScrollLayout>
+    <LinearLayout 
+    	android:orientation="horizontal" 
+    	android:id="@+id/llayout"  
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginBottom="24.0dip" 
+    	android:layout_alignParentBottom="true" 
+    	android:layout_centerHorizontal="true"
+    	android:visibility="visible">
+    	
+        <ImageView android:clickable="true"  android:padding="5.0dip" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/page_indicator_bg" />
+        <ImageView android:clickable="true"  android:padding="5.0dip"  android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/page_indicator_bg" />
+        <ImageView android:clickable="true"  android:padding="5.0dip"  android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/page_indicator_bg" />
+        
+        
+    </LinearLayout>
+   <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:id="@+id/animLayout">
+       
+     <LinearLayout
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView 
+            android:id="@+id/leftLayout" 
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/startdoor_1"
+            />
+        
+        
+           
+            
+		<ImageView 
+		     android:id="@+id/rightLayout" 
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/startdoor_2"/>
+        </LinearLayout> 
+    </LinearLayout>
+</RelativeLayout>

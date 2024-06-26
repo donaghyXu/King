@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_1"
+    android:orientation="vertical" >
+  
+   <LinearLayout
+        android:id="@+id/linearLayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:gravity="center_horizontal" 
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_start"
+            android:text="开始" />
+        
+	    <TextView   
+		    android:id="@+id/score"   
+		    android:textSize="10pt"  
+		    android:gravity="center_horizontal"  
+		    android:layout_width="wrap_content"   
+		    android:layout_height="wrap_content"  
+		    android:text="Score:XX" 
+		    android:textColor="#FFFFFF"/>
+		    
+	    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="81dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_exit"
+        android:text="返回" />
+	    
+	    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="81dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_exit"
+        android:text="退出" />
+
+ 
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout_mouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/imgBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_margin="1px"
+                android:background="@drawable/mouse_1"/>
+
+            <ImageButton
+                android:id="@+id/imgBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_margin="1px"
+                android:background="@drawable/mouse_1" />
+
+            <ImageButton
+                android:id="@+id/imgBtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_margin="1px"
+                android:background="@drawable/mouse_1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/imgBtn4"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_margin="2px"
+                android:background="@drawable/mouse_1" />
+
+            <ImageButton
+                android:id="@+id/imgBtn5"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_margin="2px"
+                android:background="@drawable/mouse_1"/>
+
+            <ImageButton
+                android:id="@+id/imgBtn6"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_margin="2px"
+                android:background="@drawable/mouse_1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/imgBtn7"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_margin="2px"
+                android:background="@drawable/mouse_1" />
+
+            <ImageButton
+                android:id="@+id/imgBtn8"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_margin="2px"
+                android:background="@drawable/mouse_1" />
+
+            <ImageButton
+                android:id="@+id/imgBtn9"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_margin="2px"
+                android:background="@drawable/mouse_1" />
+        </TableRow>
+
+        
+    </TableLayout>
+      
+</LinearLayout>  

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.whacamole.king"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tiger"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar"  >
+        
+        <activity
+            android:name=".WelcomeAnimation" 
+            android:label="@string/app_name">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="OtherActivity"></activity>
+        <activity android:name="MainActivity"></activity>
+        <activity android:name="HelpActivity"></activity>
+        
+        
+        <service android:name=".MusicServer">
+        <intent-filter>
+            <action android:name="com.angel.Android.MUSIC"/>
+			<category android:name="android.intent.category.default" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
